@@ -38,7 +38,9 @@ App Name: GooDaym App
 -
 
 # Usage
-
+- First of all, when the application opens, you will be greeted by a "Sign Up" screen.
+- You can enter the application by entering the required information here.
+![Ekran görüntüsü 2024-02-21 162359](https://github.com/EmreOzdemiroglu/GDSC/assets/153070257/4ded8e86-5a7e-493a-8c10-e70f65d47c87)
 
 
 
