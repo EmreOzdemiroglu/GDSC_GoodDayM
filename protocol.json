@@ -1,0 +1,128 @@
+[
+{
+ "Genre": "Productivity and Work",
+ "Source": "",
+ "MainPoint": "Pomodoro is a study technique where one person studies or works for 25 minutes and rests for 5 minutes. By slicing study or work sessions like that increases the ones productivity.",
+ "Protocol": "Work for 25 minutes and rest for 5 minutes. In your resting time stay away from the work to reset your mind.",
+ "Benefits": "Increased Productivity. Being able to work for longer. Slicing tasks to smaller pieces for an increase in productivity.",
+ "SuccessRate": "%85",
+ "People": "Individuals of all ages, including children, adults, and the elderly."
+},
+{
+ "Genre": "Health",
+ "Source": "",
+ "MainPoint": "By eating regularly and healthily, you can reduce the risk of diseases such as cardiovascular diseases, stroke and cancer.",
+ "Protocol": "By increasing the consumption of fruits, vegetables and legumes at a balanced level during the day, the risk of diseases such as cardiovascular diseases and diabetes can be reduced.",
+ "Benefits": "1.Reduces the risk of diabetes and obesity. 2- It reduces the risk of diseases such as cardiovascular diseases and stroke, cancer.",
+ "SuccessRate": "",
+ "People": "Adults"
+},
+{
+ "Genre": "Addiction Quitting",
+ "Source": "",
+ "MainPoint": "To quit a harmful or unwanted habit, one must stay away from the addiction for a month. Although it is hard to do it, especially for the first 10 to 15 days, the effects of the addiction will slowly pass away and reduced to almost none after a month.",
+ "Protocol": "Quit the addiction or unwanted habit for at least 30 days. Be aware of the fact that withdrawal effects will be uncomfortable, especially the first 10 to 15 days. After a month all withdrawal effects will be gone or reduced drastically.",
+ "Benefits": "Better lifestyle. Increased life quality. Increased self confidence. Getting rid of the harmful effects of the addiction",
+ "SuccessRate": "%90",
+ "People": "Individuals of all ages, including children, adults, and the elderly."
+},
+{
+ "Genre": "Sun Light",
+ "Source": "",
+ "MainPoint": "Exposure to too much sunlight during long-term outdoor activities is harmful. It increases the risk of diseases such as skin cancer.",
+ "Protocol": "In cases of excessive exposure to sunlight, protective clothing should be worn and high factor sunscreen should be applied to reduce the risk of skin diseases.",
+ "Benefits": "1-Reduces the risk of skin diseases.",
+ "SuccessRate": "",
+ "People": "Childrens, teenagers and adults"
+},
+{
+ "Genre": "Coffee and Caffeine Stimulation",
+ "Source": "",
+ "MainPoint": "High caffeine intake may cause headache, dehydration, insomnia and fatigue. One should be careful about its caffeine intake. Maximum daily caffeine intake is five cups of coffee or an equivalent drink or food. However maximum intake varies highly between individuals.",
+ "Protocol": "Do not consume more than five cups of coffee or an equivalent drink or food in caffeine. Record your daily caffeine intake and test if symptoms are gone or have eased. If symptoms continue consult a doctor",
+ "Benefits": "Better lifestyle. Better sleep. Increased digest system health. Decreased dehydration.",
+ "SuccessRate": "%80",
+ "People": "Adults and elderly."
+},
+  {
+    "Genre": "Digital Literacy",
+    "Source": "",
+    "MainPoint": "In the digital age, being proficient in understanding and using technology is critical for navigating online environments safely and effectively.",
+    "Protocol": "Engage in online courses or workshops to learn about internet safety, privacy, digital tools, and platforms. Practice regular use of technology for various tasks.",
+    "Benefits": "Enhanced ability to navigate the internet, improved online security, better job prospects, and increased connectivity with the digital world.",
+    "People": "Applicable to all age groups, especially students, job seekers, and the elderly looking to stay connected."
+  },
+  {
+    "Genre": "Eco-Friendly Living",
+    "Source": "",
+    "MainPoint": "Adopting eco-friendly living practices helps reduce one's environmental footprint by making more sustainable choices in daily life.",
+    "Protocol": "Reduce waste by recycling and composting, minimize energy consumption, use sustainable products, and conserve water. Support and purchase from eco-conscious brands.",
+    "Benefits": "Contributes to environmental preservation, reduces waste, saves energy, and promotes a healthier lifestyle.",
+    "People": "Individuals, families, and communities interested in reducing their environmental impact."
+  },
+  {
+    "Genre": "Personal Development",
+    "Source": "",
+    "MainPoint": "Continuous personal growth and learning new skills are essential for both professional success and personal satisfaction.",
+    "Protocol": "Set clear personal and professional goals, seek out learning opportunities, practice self-reflection, and embrace challenges as opportunities for growth.",
+    "Benefits": "Increased self-esteem, better career opportunities, improved adaptability to change, and enhanced life satisfaction.",
+    "People": "Anyone looking to improve themselves, including professionals, students, and lifelong learners."
+  },
+  {
+    "Genre": "Home Gardening",
+    "Source": "",
+    "MainPoint": "Home gardening is a rewarding activity that can improve mental and physical health, provide fresh produce, and enhance home aesthetics.",
+    "Protocol": "Start with easy-to-grow plants, use quality soil, ensure proper sunlight, water regularly, and learn about pest management. Consider container or community gardening if space is limited.",
+    "Benefits": "Provides fresh fruits and vegetables, reduces grocery bills, improves mental health, and promotes physical activity.",
+    "People": "Suitable for individuals and families with any level of gardening experience, including urban dwellers."
+  },
+  {
+    "Genre": "Mindful Technology Use",
+    "Source": "",
+    "MainPoint": "Mindful use of technology involves being conscious of how much time is spent on digital devices and ensuring that this time is used productively.",
+    "Protocol": "Set specific times for checking emails and social media, use apps to monitor and limit screen time, and designate tech-free zones and times at home.",
+    "Benefits": "Reduces digital clutter and distraction, improves real-life relationships, enhances focus, and supports mental health.",
+    "People": "Especially beneficial for students, professionals, and families looking to improve their quality of life."
+  },
+  {
+    "Genre": "Public Speaking",
+    "Source": "",
+    "MainPoint": "Effective public speaking skills are crucial for professional development, leadership, and personal expression.",
+    "Protocol": "Practice regularly, seek feedback, study effective speakers, and engage in public speaking groups or courses. Focus on body language, voice modulation, and audience engagement.",
+    "Benefits": "Increases confidence, improves communication skills, enhances personal and professional relationships, and opens up new opportunities.",
+    "People": "Individuals looking to enhance their career prospects, students, educators, and anyone interested in personal development."
+  },
+  {
+    "Genre": "Creative Writing",
+    "Source": "",
+    "MainPoint": "Creative writing enhances expressive skills, fosters imagination, and provides a therapeutic outlet for emotions and ideas.",
+    "Protocol": "Write regularly, read widely to gain inspiration, participate in writing workshops or groups, and seek constructive feedback. Explore various genres and styles.",
+    "Benefits": "Improves writing and communication skills, stimulates creativity, provides emotional catharsis, and can lead to professional opportunities in writing.",
+    "People": "Aspiring writers, students, professionals seeking a creative outlet, and anyone interested in storytelling."
+  },
+  {
+    "Genre": "Cycling for Health",
+    "Source": "",
+    "MainPoint": "Cycling is an efficient, low-impact exercise that improves cardiovascular health, muscle strength, and flexibility, while also reducing stress.",
+    "Protocol": "Start with short rides and gradually increase distance and intensity. Ensure proper bike fit to avoid injuries, and wear protective gear.",
+    "Benefits": "Enhances cardiovascular fitness, aids in weight management, reduces carbon footprint, and promotes mental well-being.",
+    "People": "Individuals of all ages looking for an enjoyable and effective form of exercise."
+  },
+  {
+    "Genre": "Stress Management",
+    "Source": "",
+    "MainPoint": "Effective stress management techniques can improve quality of life, enhance productivity, and reduce the risk of health issues.",
+    "Protocol": "Identify stressors and develop coping strategies such as mindfulness, exercise, time management, and seeking social support. Practice relaxation techniques like deep breathing, meditation, or yoga.",
+    "Benefits": "Reduces anxiety and depression, improves sleep, lowers blood pressure, and enhances overall well-being.",
+    "People": "Anyone experiencing stress, including professionals, students, and caregivers."
+  },
+  {
+    "Genre": "Language Learning",
+    "Source": "",
+    "MainPoint": "Learning a new language enhances cognitive abilities, cultural understanding, and career opportunities.",
+    "Protocol": "Utilize language learning apps, take classes, practice with native speakers, and immerse yourself in the language through media and travel when possible.",
+    "Benefits": "Improves memory and decision-making skills, expands cultural awareness, increases networking opportunities, and can enhance job prospects.",
+    "People": "Students, professionals, travelers, and anyone interested in expanding their linguistic skills and cultural knowledge."
+  }
+]
+
