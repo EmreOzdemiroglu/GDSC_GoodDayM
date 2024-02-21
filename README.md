@@ -40,7 +40,21 @@ App Name: GooDaym App
 # Usage
 - First of all, when the application opens, you will be greeted by a "Sign Up" screen.
 - You can enter the application by entering the required information here.
+  
 ![Ekran görüntüsü 2024-02-21 162359](https://github.com/EmreOzdemiroglu/GDSC/assets/153070257/4ded8e86-5a7e-493a-8c10-e70f65d47c87)
+
+- If you have logged in before, you can log in by pressing the login button.
+
+![Ekran görüntüsü 2024-02-21 162918](https://github.com/EmreOzdemiroglu/GDSC/assets/153070257/a421f6c5-4e50-4382-889f-274929048fb6)
+
+You will then see 3 different buttons on the main application screen:
+- To-Do List
+- Protocols
+- Notes Page (To be added after the demo)
+
+![Ekran görüntüsü 2024-02-21 163248](https://github.com/EmreOzdemiroglu/GDSC/assets/153070257/0646d7ba-5a90-48a2-bb16-91356869e36a)
+
+
 
 
 
