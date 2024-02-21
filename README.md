@@ -21,7 +21,7 @@ App Name: GooDaym App
 - Python
 - Gemini AI
 - LangChain
-- GCP
+- AWS
 - Firebase
 - Realtime Database
 
