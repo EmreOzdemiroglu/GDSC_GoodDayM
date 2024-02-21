@@ -8,6 +8,12 @@ App Name: GooDaym App
 
 
 
+
+### Warning:
+- This project was prepared for Google Solution Challenge 2024.
+- This app is in the demo phase and uses Generative AI.
+- For this reason, some unexpected errors may occur, please pay attention to this.
+
 ## Build With
 - Android
 - Kotlin
@@ -53,6 +59,20 @@ You will then see 3 different buttons on the main application screen:
 - Notes Page (To be added after the demo)
 
 ![Ekran görüntüsü 2024-02-21 163248](https://github.com/EmreOzdemiroglu/GDSC/assets/153070257/0646d7ba-5a90-48a2-bb16-91356869e36a)
+
+- You can enter your To-Do by pressing the "Add Task" button.
+- You can then wait for the To-Do that the AI will create for you.
+
+![Ekran görüntüsü 2024-02-21 182356](https://github.com/EmreOzdemiroglu/GDSC/assets/153070257/fc37b0b1-0b3b-402a-86cf-d93d3aae2286)
+
+- Finally, you can access all the recommended information from the 2nd tab.
+- Notes section in the 3rd tab will be added after the demo version.
+
+![Ekran görüntüsü 2024-02-21 183339](https://github.com/EmreOzdemiroglu/GDSC/assets/153070257/48897719-cb4d-4939-9f80-821a2614e918)
+
+
+
+
 
 
 
