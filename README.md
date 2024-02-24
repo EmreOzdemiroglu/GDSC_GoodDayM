@@ -61,7 +61,7 @@ In this project, our goal is based on the principle of an artificial intelligenc
    ```
    pip install -r requirements.txt
    ```
-
+3. **API keys and URLs for RT DB:** You have to put your firebase_db url and gemini_api key in the main and number_upper app.
 ### Running the Application
 
 To ensure the application runs smoothly, you need to launch two separate instances in the following order:
