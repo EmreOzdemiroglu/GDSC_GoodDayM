@@ -105,7 +105,12 @@ You will then see 3 different buttons on the main application screen:
 
 ![Ekran görüntüsü 2024-02-21 183339](https://github.com/EmreOzdemiroglu/GDSC/assets/153070257/48897719-cb4d-4939-9f80-821a2614e918)
 
+# Contributors
 
+- İrfan Emre Durmuş
+- Kadir Tuna Hasırcı
+- Emre Özdemiroğlu
+- Ali Özgün
 
 
 
