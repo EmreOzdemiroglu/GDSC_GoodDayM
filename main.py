@@ -16,27 +16,12 @@ firebase_admin.initialize_app(cred, {
 default_llm = ChatGoogleGenerativeAI(
     model="gemini-pro",
     verbose=True,
-    temperature=0.1,
-    google_api_key="",
-    )
+    temperature=0.3,
+    google_api_key="",)
 
 
 with open('protocol.json', 'r') as file:
     protocols = json.load(file)
-
-decider_prompt = PromptTemplate.from_template("You are a neuroscientist. {Answer_This}")
-
-todo_creator_prompt = PromptTemplate.from_template("You are a psychiatrist who graduated from Harvard, and you are also a writer. Your mission: {Answer_This}")
-
-critic_prompt = PromptTemplate.from_template("You are an incredibly respected and intelligent critic who graduated from Oxford. You have a master's degree in literature. You are very talented. You can explain in a few words beautifully. Task: {Answer_This}")
-
-editor_prompt = PromptTemplate.from_template("You are an incredibly respected editor who graduated from Oxford, meticulously choosing each word and always using the correct ones. You must implement the given task. Task: {Answer_This}")
-
-
-decider_chain= decider_prompt | default_llm 
-todo_chain = todo_creator_prompt | default_llm
-critic_chain = critic_prompt | default_llm 
-editor_chain = editor_prompt | default_llm 
 
 
 def todo_anahtari_olustur(index, body, title):
@@ -44,14 +29,16 @@ def todo_anahtari_olustur(index, body, title):
     birlesik_metin = f"{index}-{body}-{title}"
     return hashlib.sha256(birlesik_metin.encode()).hexdigest()[:8]
 
+a=1 
 dosya_yolu = 'db_files/data.json'
 def metni_temizle(metin):
     return metin.replace("content=", "").replace("\n\n", "").replace("\n", "")
-
-def listener(event):
-    
-    data_changed=event.path
-    if data_changed!="/": 
+while True:
+    time.sleep(1)
+    with open('data_changed.txt', 'r') as file:
+        number = str(file.read())
+        print("number",number)
+    if number>"0": 
         ref = db.reference('/')
         with open(dosya_yolu, 'w') as f:
             json.dump(ref.get(), f, indent=4)
@@ -67,8 +54,26 @@ def listener(event):
                 
                 for index, (todo_id, todo_bilgisi) in enumerate(bilgiler['ToDos'].items(), start=1):
                     if isinstance(todo_bilgisi, dict) and todo_bilgisi.get('linked_todo', '') == "" and todo_bilgisi.get('AIGenerated', '') == 'false':
+                        try:
+
+                            decider_prompt = PromptTemplate.from_template("You are a neuroscientist. {Answer_This}")
+
+                            todo_creator_prompt = PromptTemplate.from_template("You are a psychiatrist who graduated from Harvard, and you are also a writer. Your mission: {Answer_This}")
+
+                            critic_prompt = PromptTemplate.from_template("You are an incredibly respected and intelligent critic who graduated from Oxford. You have a master's degree in literature. You are very talented. You can explain in a few words beautifully. Task: {Answer_This}")
+
+                            editor_prompt = PromptTemplate.from_template("You are an incredibly respected editor who graduated from Oxford, meticulously choosing each word and always using the correct ones. You must implement the given task. Task: {Answer_This}")
+
+
+                            decider_chain= decider_prompt | default_llm 
+                            todo_chain = todo_creator_prompt | default_llm
+                            critic_chain = critic_prompt | default_llm 
+                            editor_chain = editor_prompt | default_llm 
+                            print(todo_bilgisi.get('body', ''))
+                            print(todo_bilgisi.get('title', ''))
+                            title_body=str(todo_bilgisi.get('body', ''))+str(todo_bilgisi.get('title', ''))
                             yeni_anahtar = todo_anahtari_olustur(index, todo_bilgisi.get('body', ''), todo_bilgisi.get('title', ''))
-                            invoked_chain_decider = decider_chain.invoke({"Answer_This": f"I will give you 2 different texts. You only need to write the protocol. ONLY THE PROTOCOL! In one, there are a person's to-dos, and in the other, synthesized 'protocols' named different health recommendations from academic health studies. Your task is to determine which protocol would be suitable for the person based on the to-dos. The to-dos are {todos}, and now the protocols {protocols}, now recommend a protocol based on this information. NOTE EXTREMELY IMPORTANT! THE PROTOCOL SHOULD BE PRESENTED BY EXTRACTING FROM THE MAIN POINT SECTION."})
+                            invoked_chain_decider = decider_chain.invoke({"Answer_This": f"I will give you 2 different texts. You only need to write the protocol. ONLY THE PROTOCOL! In one, there are a person's to-dos, and in the other, synthesized 'protocols' named different health recommendations from academic health studies. Your task is to determine which protocol would be suitable for the person based on the to-dos. The to-dos are {title_body}, and now the protocols {protocols}, now recommend a protocol based on this information. NOTE EXTREMELY IMPORTANT! THE PROTOCOL SHOULD BE PRESENTED BY EXTRACTING FROM THE MAIN POINT SECTION."})
                             print("Decider :" + str(invoked_chain_decider))
                             invoked_chain_todo = todo_chain.invoke({"Answer_This": f"Your goal is to create a to-do item from the text given to you. You only need to write the to-do. Text: {invoked_chain_decider}"})
                             print("Todo :" + str(invoked_chain_todo))
@@ -91,13 +96,15 @@ def listener(event):
                                 "linked_todo": todo_bilgisi.get('title', '')
                             }
                             yeni_todo_listesi[yeni_anahtar] = yeni_todo 
-                
+                        except: 
+                            pass
                 bilgiler['ToDos'].update(yeni_todo_listesi)
 
         with open(dosya_yolu, 'w') as dosya:
             json.dump(todos, dosya, indent=4, ensure_ascii=False)
         ref.update(todos)
-db.reference('/').listen(listener)
+        number=int(number)
+        number-=1
+        with open('data_changed.txt', 'w') as file:
+            file.write(str(number))
 
-def metni_temizle(metin):
-    return metin.replace("content=", "").replace("\n\n", "").replace("\n", "")
